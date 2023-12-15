@@ -1,0 +1,158 @@
+body {
+    width: 100vw;
+    height: 99vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald';
+}
+
+button {
+    font-family: 'Oswald';
+}
+
+header {
+    height: 80px;
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin: 0 0 0 80px;
+    font-family: 'Kalnia';
+    font-size: 3rem;
+}
+
+img {
+    width: 100%;
+}
+
+.add-button {
+    height: 100%;
+    width: 270px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.add-button:hover {
+    background-color: #5c5c5c;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 80px auto 0 auto;
+}
+
+.search-bar {
+    height: 32px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    grid-column: span 4;
+}
+
+.movies {
+    margin-top: 32px;
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.movie-card img {
+    object-fit: cover;
+    height: 400px;
+    margin-bottom: 16px;
+}
+
+.movie-title__main {
+    font-family: 'Kalnia';
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.watched-status__main {
+    font-size: 13px;
+    margin: auto 0 0 8px;
+}
+
+.lightbox-background {
+    position: fixed;    
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-content { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 2;
+    margin: 60px auto 0 auto;
+    background-color: #ffffff;
+    max-width: 40%;
+    min-height: 400px;
+    padding: 16px 80px 16px 80px;
+    border-radius: 20px;
+}
+
+.add-movie {
+    display: none;
+}
+
+.add-heading {
+    font-family: 'Kalnia';
+    font-size: 2rem;
+    grid-column: span 2;
+    text-align: center;
+    margin: 0;
+}
+
+.add-input {
+    width: auto;
+    height: 18px;
+    margin: 0 0 16px 0;
+}
+
+.confirm-add {
+    grid-column: span 2;
+    width: 40%;
+    height: 35px;
+    margin: 0 auto 0 auto;
+}
+
+.movie-lightbox {
+    display: none;
+}
+
+.movie-lightbox img {
+    object-fit: fill;
+}
+
+.movie-title__light {
+    font-family: 'Kalnia';
+    font-size: 2rem;
+    margin: 32px 0 0 16px;
+}
+
+.watched-status__lightbox {
+    color: red;
+}

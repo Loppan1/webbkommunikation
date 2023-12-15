@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Watchables</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@700&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="header-title">WATCHABLES</h1>
+        <button class="add-button" id="addButton">Lägg till film</button>
+    </header>
+
+    <div class="wrapper">
+        <input type="text" placeholder="sök film" class="search-bar" id="searchInput">
+        <section class="movies" id="movies">
+        </section>
+    </div>
+
+
+    <div class="lightbox-background add-movie">
+    <div class="lightbox-content">
+        <h2 class="add-heading">Lägg till ny film</h3>
+            <label for="addTitle">Titel</label>
+            <input type="text" id="addTitle" class="add-input">
+            <label for="addGenre">Genre</label>
+            <input type="text" id="addGenre" class="add-input">
+            <label for="addRelease">Utgivningsdatum</label>
+            <input type="text" id="addRelease" placeholder="åååå-mm-dd" class="add-input">
+            <label for="addPoster">URL till bild</label>
+            <input type="text" id="addPoster" class="add-input">
+        <button class="confirm-add">Lägg till</button>
+    </div>
+    </div>
+
+    
+    <div class="lightbox-background movie-lightbox">
+    </div>
+    </div>
+    
+    <script src='js/index.js' type="module"></script>
+</body>
+</html>
